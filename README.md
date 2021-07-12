@@ -64,7 +64,7 @@ Endpoint для получения списка компаний https://random-
 ![Макет_1](https://user-images.githubusercontent.com/85609295/125302004-fe614180-e344-11eb-8f74-9ca920347d57.png)
 
 Детайльная информация о компании
-![Макет_2](https://user-images.githubusercontent.com/85609295/125307545-93663980-e349-11eb-9026-5ba14e3ca1c7.png)
+![Макет_1](https://user-images.githubusercontent.com/85609295/125308880-b80ee100-e34a-11eb-84a5-55d06484a453.png)
 
 Яндекс карта 
 ![Макет_2](https://user-images.githubusercontent.com/85609295/125308538-6b2b0a80-e34a-11eb-9d89-b3821ba65044.png)
