@@ -1,0 +1,24 @@
+.sort-options {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-around;
+  .field_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    &__label {
+      width: 205px;
+    }
+    &__input {
+      width: 268px;
+      padding: 0;
+    }
+    &__select{
+      width: 270px;
+    }
+  }
+}
+
+

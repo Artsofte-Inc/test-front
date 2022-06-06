@@ -1,0 +1,12 @@
+<a (click)="goToDetails()" class="link company-item__link">
+  <div class="item-container link__item-container">
+    <div class="logo item-container__logo">
+      <img [src]="item.logo" class="logo__company-img">
+    </div>
+    <div class="description">
+      <p class="description__description-field">Название компании: {{item.suffix}} "{{item.business_name}}"</p>
+      <p class="description__description-field">Вид деятельности: {{item.industry}}</p>
+      <p class="description__description-field">Тип: {{item.type}}</p>
+    </div>
+  </div>
+</a>

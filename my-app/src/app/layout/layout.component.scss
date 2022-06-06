@@ -1,0 +1,31 @@
+.layout {
+  border: 3px solid black;
+  height: 100%;
+  background-color: lavender;
+  padding: 0 10% 0 10%;
+  &__content {
+    height: 80%;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 2%;
+    &__link {
+      text-decoration: none;
+      color: black;
+      .button {
+        width: 200px;
+        background-color: aliceblue;
+        border: 3px solid black;
+        &:hover {
+          background-color: beige;
+          cursor: pointer;
+        }
+        &__text {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
