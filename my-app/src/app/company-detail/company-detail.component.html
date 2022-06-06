@@ -1,0 +1,17 @@
+<div class="company-detail">
+  <div class="logo company-detail__logo">
+    <img [src]="companyDetail.logo" class="company-img">
+  </div>
+  <div class="description company-detail__description">
+    <strong class="description__label">Название компании:</strong>
+    <p class="description__company-detail-field">{{companyDetail.suffix}} "{{companyDetail.business_name}}"</p>
+    <strong class="description__label">Вид деятельности:</strong>
+    <p class="description__company-detail-field">{{companyDetail.industry}}</p>
+    <strong class="description__label">Слоган:</strong>
+    <p class="description__company-detail-field">{{companyDetail.catch_phrase}}</p>
+    <strong class="description__label">Контактный номер телефона</strong>
+    <p class="description__company-detail-field">{{companyDetail.phone_number}}</p>
+    <strong class="description__label">Адрес:</strong>
+    <p class="description__company-detail-field">{{companyDetail.full_address}}</p>
+  </div>
+</div>

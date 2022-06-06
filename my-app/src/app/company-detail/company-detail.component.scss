@@ -1,0 +1,28 @@
+.company-detail {
+  border: 3px solid black;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  &__logo {
+    width: 50%;
+    padding: 10px;
+    .company-img {
+      height: 30%;
+      width: 100%;
+    }
+  }
+  .description {
+    padding: 16px;
+    width: 80%;
+    &__company-detail-field {
+      font-size: 20px;
+      padding: 10px;
+      margin: 0;
+    }
+    &__label {
+      font-size: 20px;
+      padding: 10px;
+      margin: 0;
+    }
+  }
+}

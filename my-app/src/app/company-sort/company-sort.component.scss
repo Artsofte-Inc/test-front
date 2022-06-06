@@ -1,0 +1,19 @@
+.sort-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 2%;
+  .option {
+    border: 3px solid black;
+    width: 200px;
+    background-color: aliceblue;
+    &:hover {
+      background-color: beige;
+      cursor: pointer;
+    }
+    &__text {
+      color: black;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  .item-container {
+    display: flex;
+    padding: 2%;
+    height: 20%;
+    &:hover {
+      background-color: gainsboro;
+    }
+    .description {
+      border: 3px solid black;
+      padding: 16px;
+      width: 80%;
+      &__description-field {
+        margin: 5px;
+      }
+    }
+    .logo {
+      border: 3px solid black;
+      width: 20%;
+      &__company-img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

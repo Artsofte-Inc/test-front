@@ -1,0 +1,5 @@
+<div class="company-list">
+    <company-filter (onChangedFilter)="onChangedFilter($event)" [industryList]="industryList" [typeList]="typeList"></company-filter>
+    <company-sort (onChangedSort)="onChangedSort($event)"></company-sort>
+    <company-item *ngFor="let item of companyList" [item]="item"></company-item>
+</div>

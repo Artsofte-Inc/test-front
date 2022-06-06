@@ -1,0 +1,20 @@
+<form [formGroup]="myForm" novalidate>
+  <section class="sort-options">
+    <div class="field_wrapper sort-options__field_wrapper">
+      <label class="field_wrapper__label">Поиск по названию</label>
+      <input class="field_wrapper__input" type ="text" name="name" formControlName="businessName" />
+    </div>
+    <div class="field_wrapper sort-options__field_wrapper">
+      <label class="field_wrapper__label sort-options__field_wrapper">Фильтр по типу</label>
+      <select class="field_wrapper__select" name="type" formControlName="type" size="1">
+        <option *ngFor="let type of typeList">{{type}}</option>
+      </select>
+    </div>
+    <div class="field_wrapper sort-options__field_wrapper">
+      <label class="field_wrapper__label sort-options__field_wrapper">Фильтр по виду деятельности</label>
+      <select class="field_wrapper__select" name="industry" formControlName="industry" size="1">
+        <option *ngFor="let industry of industryList">{{industry}}</option>
+      </select>
+    </div>
+  </section>
+</form>
