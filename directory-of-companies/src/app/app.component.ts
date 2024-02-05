@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ICompany } from './models/company';  
+import { companies } from './data/companies';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Справочник компаний';
+  companies: ICompany[] = companies;
 }

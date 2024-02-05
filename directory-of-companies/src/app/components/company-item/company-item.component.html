@@ -1,9 +1,9 @@
 <div class="company-item">
   <div class="header">
-    <img class="logo" src="https://pigment.github.io/fake-logos/logos/medium/color/5.png" alt="O'Keefe-Gutkowski">
-    <p class="business-name">"O'Keefe-Gutkowski" and Sons</p>
+    <img class="logo" src={{company.logo}} alt={{company.business_name}}>
+    <p class="business-name">"{{company.business_name}}" {{company.suffix}}</p>
   </div>
-  <p class="industry"><b>Industry:</b> Apparel \u0026 Fashion</p>
-  <p class="type"><b>Type:</b> Self-Employed</p>
+  <p class="industry"><b>Industry:</b> {{company.industry}}</p>
+  <p class="type"><b>Type:</b> {{company.type}}</p>
   <button class="learn-more-button">Узнать подробнее</button>
 </div>
