@@ -1,0 +1,9 @@
+<div class="company-item">
+  <div class="header">
+    <img class="logo" src={{company.logo}} alt={{company.business_name}}>
+    <p class="business-name">"{{company.business_name}}" {{company.suffix}}</p>
+  </div>
+  <p class="industry"><b>Industry:</b> {{company.industry}}</p>
+  <p class="type"><b>Type:</b> {{company.type}}</p>
+  <button class="learn-more-button" (click)="navigateToDetailCompany(company.id)">Узнать подробнее</button>
+</div>
