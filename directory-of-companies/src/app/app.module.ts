@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,9 @@ import { CopmanyItemComponent } from './components/company-item/company-item.com
 import { CompanyListComponent } from './components/company-list/company-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CompanyDetailComponent } from './components/company-detail/company-detail.component';
+import { FilterByNamePipe } from './pipes/filter-by-name.pipe';
+import { FilterByTypePipe } from './pipes/filter-by-type.pipe';
+import { FilterByIndustryPipe } from './pipes/filter-by-industry.pipe';
 
 @NgModule({
   declarations: [
@@ -15,12 +19,16 @@ import { CompanyDetailComponent } from './components/company-detail/company-deta
     LayoutComponent,
     CopmanyItemComponent,
     CompanyListComponent,
-    CompanyDetailComponent
+    CompanyDetailComponent,
+    FilterByNamePipe,
+    FilterByTypePipe,
+    FilterByIndustryPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

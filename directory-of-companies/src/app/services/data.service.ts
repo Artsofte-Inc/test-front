@@ -18,4 +18,12 @@ export class DataService {
   findCompanyById(id: number): ICompany | undefined {
     return this.companies.find((company) => company.id == id);
   }
+
+  getAllTypes(): string[] {
+    return ['All types', ...new Set(this.companies.map((company) => company.type))]
+  }
+
+  getAllIndustries(): string[] {
+    return ['All industries', ...new Set(this.companies.map((company) => company.industry))]
+  }
 }

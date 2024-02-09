@@ -1,6 +1,31 @@
 <div class="container">
+  <input 
+    type="text"
+    placeholder="Input company name"
+    class="search"
+    [(ngModel)]="searchValue">
+  <div class="filters">
+    <div class="filter">
+      <label class="filter-name">Фильтрация по типу:</label>
+      <select class="selector" [(ngModel)]="type">
+        <option
+          *ngFor="let type of types">
+            {{type}}
+        </option>
+      </select>
+    </div>
+    <div class="filter">
+      <label class="filter-name">Фильтрация по индустрии:</label>
+      <select class="selector" [(ngModel)]="industry">
+        <option
+          *ngFor="let industry of industries">
+            {{industry}}
+        </option>
+      </select>
+    </div>
+  </div>
   <app-company-item 
-    *ngFor="let company of companies"
+    *ngFor="let company of companies | filterByName: searchValue | filterByType: type | filterByIndustry: industry"
     [company]="company">
   </app-company-item>
 </div>
