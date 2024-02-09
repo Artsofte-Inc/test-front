@@ -12,6 +12,7 @@ import { CompanyDetailComponent } from './components/company-detail/company-deta
 import { FilterByNamePipe } from './pipes/filter-by-name.pipe';
 import { FilterByTypePipe } from './pipes/filter-by-type.pipe';
 import { FilterByIndustryPipe } from './pipes/filter-by-industry.pipe';
+import { SortByParamPipe } from './pipes/sort-by-param.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FilterByIndustryPipe } from './pipes/filter-by-industry.pipe';
     CompanyDetailComponent,
     FilterByNamePipe,
     FilterByTypePipe,
-    FilterByIndustryPipe
+    FilterByIndustryPipe,
+    SortByParamPipe
   ],
   imports: [
     BrowserModule,

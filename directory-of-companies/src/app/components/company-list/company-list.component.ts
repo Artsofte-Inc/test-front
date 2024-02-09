@@ -17,6 +17,8 @@ export class CompanyListComponent implements OnInit {
   industry: string = 'All industries'
   searchValue: string = ''
 
+  activeSort: string = ''
+
   constructor(private companiesService: CompaniesService, private dataService: DataService) {}
 
   ngOnInit(): void {
@@ -26,5 +28,9 @@ export class CompanyListComponent implements OnInit {
       this.types = this.dataService.getAllTypes()
       this.industries = this.dataService.getAllIndustries()
     })
+  }
+
+  setActiveSort(sort:string) {
+    this.activeSort = sort
   }
 }

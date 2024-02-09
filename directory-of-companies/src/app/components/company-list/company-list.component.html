@@ -6,7 +6,7 @@
     [(ngModel)]="searchValue">
   <div class="filters">
     <div class="filter">
-      <label class="filter-name">Фильтрация по типу:</label>
+      <label class="filter-name">Filter by type</label>
       <select class="selector" [(ngModel)]="type">
         <option
           *ngFor="let type of types">
@@ -15,7 +15,7 @@
       </select>
     </div>
     <div class="filter">
-      <label class="filter-name">Фильтрация по индустрии:</label>
+      <label class="filter-name">Filter by industry</label>
       <select class="selector" [(ngModel)]="industry">
         <option
           *ngFor="let industry of industries">
@@ -24,8 +24,37 @@
       </select>
     </div>
   </div>
+  <div class="sort-container">
+    <label class="sort-by">Sort by</label>
+    <div class="sorting">
+      <button
+        class="sort-button"
+        (click)="setActiveSort('business_name')"
+        [ngClass]="{
+          'active': activeSort === 'business_name'
+        }">
+          name
+      </button>
+      <button
+        class="sort-button"
+        (click)="setActiveSort('type')"
+        [ngClass]="{
+          'active': activeSort === 'type'
+        }">
+          type
+      </button>
+      <button
+        class="sort-button"
+        (click)="setActiveSort('industry')"
+        [ngClass]="{
+          'active': activeSort === 'industry'
+        }">
+          industry
+      </button>
+    </div>
+  </div>
   <app-company-item 
-    *ngFor="let company of companies | filterByName: searchValue | filterByType: type | filterByIndustry: industry"
+    *ngFor="let company of companies | filterByName: searchValue | filterByType: type | filterByIndustry: industry | sortByParam: activeSort"
     [company]="company">
   </app-company-item>
 </div>
