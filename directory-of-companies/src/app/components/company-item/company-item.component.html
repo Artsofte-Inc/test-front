@@ -5,5 +5,5 @@
   </div>
   <p class="industry"><b>Industry:</b> {{company.industry}}</p>
   <p class="type"><b>Type:</b> {{company.type}}</p>
-  <button class="learn-more-button">Узнать подробнее</button>
+  <button class="learn-more-button" (click)="navigateToDetailCompany(company.id)">Узнать подробнее</button>
 </div>
