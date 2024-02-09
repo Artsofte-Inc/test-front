@@ -1,0 +1,25 @@
+nav {
+  margin: 0;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(87, 147, 153);
+
+  padding-right: 30px;
+}
+
+.active-link {
+  text-decoration: underline; 
+  text-decoration-color: rgb(87, 147, 153);
+}

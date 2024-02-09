@@ -13,6 +13,9 @@ import { FilterByNamePipe } from './pipes/filter-by-name.pipe';
 import { FilterByTypePipe } from './pipes/filter-by-type.pipe';
 import { FilterByIndustryPipe } from './pipes/filter-by-industry.pipe';
 import { SortByParamPipe } from './pipes/sort-by-param.pipe';
+import { MapComponent } from './components/map/map.component';
+import { AngularYandexMapsModule } from 'angular8-yandex-maps';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +27,16 @@ import { SortByParamPipe } from './pipes/sort-by-param.pipe';
     FilterByNamePipe,
     FilterByTypePipe,
     FilterByIndustryPipe,
-    SortByParamPipe
+    SortByParamPipe,
+    MapComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AngularYandexMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
